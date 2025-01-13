@@ -5,3 +5,4 @@ pandas
 plotly
 cohere
 fpdf
+PyPDF2
