@@ -1,0 +1,281 @@
+Año,Profesion,Género,Tasa de Empleo
+2010,Ingeniería de Sistemas,Hombre,87
+2010,Ingeniería de Sistemas,Mujer,75
+2010,Medicina,Hombre,73
+2010,Medicina,Mujer,83
+2010,Abogacía,Hombre,81
+2010,Abogacía,Mujer,77
+2010,Contabilidad,Hombre,87
+2010,Contabilidad,Mujer,87
+2010,Arquitectura,Hombre,95
+2010,Arquitectura,Mujer,79
+2010,Enfermería,Hombre,82
+2010,Enfermería,Mujer,91
+2010,Docencia,Hombre,74
+2010,Docencia,Mujer,75
+2010,Psicología,Hombre,82
+2010,Psicología,Mujer,95
+2010,Marketing,Hombre,74
+2010,Marketing,Mujer,84
+2010,Economía,Hombre,93
+2010,Economía,Mujer,72
+2011,Ingeniería de Sistemas,Hombre,78
+2011,Ingeniería de Sistemas,Mujer,87
+2011,Medicina,Hombre,88
+2011,Medicina,Mujer,83
+2011,Abogacía,Hombre,78
+2011,Abogacía,Mujer,94
+2011,Contabilidad,Hombre,71
+2011,Contabilidad,Mujer,78
+2011,Arquitectura,Hombre,81
+2011,Arquitectura,Mujer,88
+2011,Enfermería,Hombre,75
+2011,Enfermería,Mujer,82
+2011,Docencia,Hombre,95
+2011,Docencia,Mujer,86
+2011,Psicología,Hombre,78
+2011,Psicología,Mujer,93
+2011,Marketing,Hombre,70
+2011,Marketing,Mujer,87
+2011,Economía,Hombre,81
+2011,Economía,Mujer,88
+2012,Ingeniería de Sistemas,Hombre,71
+2012,Ingeniería de Sistemas,Mujer,70
+2012,Medicina,Hombre,71
+2012,Medicina,Mujer,87
+2012,Abogacía,Hombre,77
+2012,Abogacía,Mujer,72
+2012,Contabilidad,Hombre,72
+2012,Contabilidad,Mujer,81
+2012,Arquitectura,Hombre,81
+2012,Arquitectura,Mujer,82
+2012,Enfermería,Hombre,93
+2012,Enfermería,Mujer,72
+2012,Docencia,Hombre,94
+2012,Docencia,Mujer,95
+2012,Psicología,Hombre,72
+2012,Psicología,Mujer,93
+2012,Marketing,Hombre,71
+2012,Marketing,Mujer,94
+2012,Economía,Hombre,91
+2012,Economía,Mujer,72
+2013,Ingeniería de Sistemas,Hombre,72
+2013,Ingeniería de Sistemas,Mujer,88
+2013,Medicina,Hombre,85
+2013,Medicina,Mujer,87
+2013,Abogacía,Hombre,86
+2013,Abogacía,Mujer,75
+2013,Contabilidad,Hombre,88
+2013,Contabilidad,Mujer,85
+2013,Arquitectura,Hombre,83
+2013,Arquitectura,Mujer,72
+2013,Enfermería,Hombre,89
+2013,Enfermería,Mujer,82
+2013,Docencia,Hombre,75
+2013,Docencia,Mujer,91
+2013,Psicología,Hombre,91
+2013,Psicología,Mujer,89
+2013,Marketing,Hombre,77
+2013,Marketing,Mujer,92
+2013,Economía,Hombre,76
+2013,Economía,Mujer,84
+2014,Ingeniería de Sistemas,Hombre,77
+2014,Ingeniería de Sistemas,Mujer,73
+2014,Medicina,Hombre,91
+2014,Medicina,Mujer,80
+2014,Abogacía,Hombre,87
+2014,Abogacía,Mujer,85
+2014,Contabilidad,Hombre,78
+2014,Contabilidad,Mujer,73
+2014,Arquitectura,Hombre,75
+2014,Arquitectura,Mujer,88
+2014,Enfermería,Hombre,73
+2014,Enfermería,Mujer,89
+2014,Docencia,Hombre,78
+2014,Docencia,Mujer,78
+2014,Psicología,Hombre,74
+2014,Psicología,Mujer,88
+2014,Marketing,Hombre,70
+2014,Marketing,Mujer,94
+2014,Economía,Hombre,82
+2014,Economía,Mujer,93
+2015,Ingeniería de Sistemas,Hombre,86
+2015,Ingeniería de Sistemas,Mujer,79
+2015,Medicina,Hombre,83
+2015,Medicina,Mujer,83
+2015,Abogacía,Hombre,91
+2015,Abogacía,Mujer,74
+2015,Contabilidad,Hombre,93
+2015,Contabilidad,Mujer,82
+2015,Arquitectura,Hombre,87
+2015,Arquitectura,Mujer,88
+2015,Enfermería,Hombre,83
+2015,Enfermería,Mujer,75
+2015,Docencia,Hombre,70
+2015,Docencia,Mujer,74
+2015,Psicología,Hombre,87
+2015,Psicología,Mujer,76
+2015,Marketing,Hombre,73
+2015,Marketing,Mujer,74
+2015,Economía,Hombre,86
+2015,Economía,Mujer,89
+2016,Ingeniería de Sistemas,Hombre,71
+2016,Ingeniería de Sistemas,Mujer,71
+2016,Medicina,Hombre,91
+2016,Medicina,Mujer,73
+2016,Abogacía,Hombre,78
+2016,Abogacía,Mujer,77
+2016,Contabilidad,Hombre,93
+2016,Contabilidad,Mujer,84
+2016,Arquitectura,Hombre,88
+2016,Arquitectura,Mujer,73
+2016,Enfermería,Hombre,82
+2016,Enfermería,Mujer,78
+2016,Docencia,Hombre,79
+2016,Docencia,Mujer,89
+2016,Psicología,Hombre,93
+2016,Psicología,Mujer,77
+2016,Marketing,Hombre,95
+2016,Marketing,Mujer,87
+2016,Economía,Hombre,86
+2016,Economía,Mujer,73
+2017,Ingeniería de Sistemas,Hombre,83
+2017,Ingeniería de Sistemas,Mujer,77
+2017,Medicina,Hombre,93
+2017,Medicina,Mujer,82
+2017,Abogacía,Hombre,87
+2017,Abogacía,Mujer,86
+2017,Contabilidad,Hombre,85
+2017,Contabilidad,Mujer,72
+2017,Arquitectura,Hombre,78
+2017,Arquitectura,Mujer,77
+2017,Enfermería,Hombre,73
+2017,Enfermería,Mujer,83
+2017,Docencia,Hombre,75
+2017,Docencia,Mujer,92
+2017,Psicología,Hombre,90
+2017,Psicología,Mujer,71
+2017,Marketing,Hombre,85
+2017,Marketing,Mujer,80
+2017,Economía,Hombre,77
+2017,Economía,Mujer,72
+2018,Ingeniería de Sistemas,Hombre,75
+2018,Ingeniería de Sistemas,Mujer,89
+2018,Medicina,Hombre,80
+2018,Medicina,Mujer,92
+2018,Abogacía,Hombre,90
+2018,Abogacía,Mujer,77
+2018,Contabilidad,Hombre,83
+2018,Contabilidad,Mujer,70
+2018,Arquitectura,Hombre,78
+2018,Arquitectura,Mujer,82
+2018,Enfermería,Hombre,71
+2018,Enfermería,Mujer,77
+2018,Docencia,Hombre,91
+2018,Docencia,Mujer,72
+2018,Psicología,Hombre,71
+2018,Psicología,Mujer,85
+2018,Marketing,Hombre,76
+2018,Marketing,Mujer,75
+2018,Economía,Hombre,74
+2018,Economía,Mujer,77
+2019,Ingeniería de Sistemas,Hombre,83
+2019,Ingeniería de Sistemas,Mujer,87
+2019,Medicina,Hombre,77
+2019,Medicina,Mujer,77
+2019,Abogacía,Hombre,84
+2019,Abogacía,Mujer,93
+2019,Contabilidad,Hombre,86
+2019,Contabilidad,Mujer,93
+2019,Arquitectura,Hombre,95
+2019,Arquitectura,Mujer,72
+2019,Enfermería,Hombre,87
+2019,Enfermería,Mujer,78
+2019,Docencia,Hombre,74
+2019,Docencia,Mujer,78
+2019,Psicología,Hombre,73
+2019,Psicología,Mujer,72
+2019,Marketing,Hombre,95
+2019,Marketing,Mujer,78
+2019,Economía,Hombre,91
+2019,Economía,Mujer,91
+2020,Ingeniería de Sistemas,Hombre,78
+2020,Ingeniería de Sistemas,Mujer,74
+2020,Medicina,Hombre,83
+2020,Medicina,Mujer,77
+2020,Abogacía,Hombre,85
+2020,Abogacía,Mujer,94
+2020,Contabilidad,Hombre,95
+2020,Contabilidad,Mujer,78
+2020,Arquitectura,Hombre,90
+2020,Arquitectura,Mujer,94
+2020,Enfermería,Hombre,76
+2020,Enfermería,Mujer,83
+2020,Docencia,Hombre,90
+2020,Docencia,Mujer,83
+2020,Psicología,Hombre,93
+2020,Psicología,Mujer,81
+2020,Marketing,Hombre,70
+2020,Marketing,Mujer,78
+2020,Economía,Hombre,77
+2020,Economía,Mujer,71
+2021,Ingeniería de Sistemas,Hombre,80
+2021,Ingeniería de Sistemas,Mujer,80
+2021,Medicina,Hombre,76
+2021,Medicina,Mujer,86
+2021,Abogacía,Hombre,88
+2021,Abogacía,Mujer,78
+2021,Contabilidad,Hombre,76
+2021,Contabilidad,Mujer,76
+2021,Arquitectura,Hombre,93
+2021,Arquitectura,Mujer,88
+2021,Enfermería,Hombre,76
+2021,Enfermería,Mujer,79
+2021,Docencia,Hombre,76
+2021,Docencia,Mujer,78
+2021,Psicología,Hombre,81
+2021,Psicología,Mujer,90
+2021,Marketing,Hombre,78
+2021,Marketing,Mujer,79
+2021,Economía,Hombre,72
+2021,Economía,Mujer,92
+2022,Ingeniería de Sistemas,Hombre,83
+2022,Ingeniería de Sistemas,Mujer,88
+2022,Medicina,Hombre,91
+2022,Medicina,Mujer,93
+2022,Abogacía,Hombre,75
+2022,Abogacía,Mujer,81
+2022,Contabilidad,Hombre,75
+2022,Contabilidad,Mujer,90
+2022,Arquitectura,Hombre,73
+2022,Arquitectura,Mujer,80
+2022,Enfermería,Hombre,84
+2022,Enfermería,Mujer,87
+2022,Docencia,Hombre,82
+2022,Docencia,Mujer,71
+2022,Psicología,Hombre,81
+2022,Psicología,Mujer,93
+2022,Marketing,Hombre,95
+2022,Marketing,Mujer,90
+2022,Economía,Hombre,74
+2022,Economía,Mujer,70
+2023,Ingeniería de Sistemas,Hombre,83
+2023,Ingeniería de Sistemas,Mujer,72
+2023,Medicina,Hombre,84
+2023,Medicina,Mujer,73
+2023,Abogacía,Hombre,88
+2023,Abogacía,Mujer,77
+2023,Contabilidad,Hombre,70
+2023,Contabilidad,Mujer,76
+2023,Arquitectura,Hombre,78
+2023,Arquitectura,Mujer,76
+2023,Enfermería,Hombre,70
+2023,Enfermería,Mujer,94
+2023,Docencia,Hombre,76
+2023,Docencia,Mujer,83
+2023,Psicología,Hombre,77
+2023,Psicología,Mujer,73
+2023,Marketing,Hombre,79
+2023,Marketing,Mujer,91
+2023,Economía,Hombre,95
+2023,Economía,Mujer,87
