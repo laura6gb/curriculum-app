@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import cohere
 import PyPDF2
@@ -15,7 +14,8 @@ st.write(
 
 uploaded_file = st.file_uploader("Sube tu archivo PDF", type="pdf")
 
-co = cohere.Client(os.getenv(cohere_api_key))
+cohere_api_key=st.secrets["COHERE_API_KEY"]
+co = cohere.Client(cohere_api_key)
 
 # Process file and extract text
 if uploaded_file:
