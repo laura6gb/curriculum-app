@@ -4,10 +4,10 @@ from azure.core.credentials import AzureKeyCredential
 from langchain_openai import AzureOpenAI
 
 # Form Recognizer Keys
-fr_endpoint = st.secrets("AZURE_ENDPOINT")
-fr_api_key = st.secrets(
+fr_endpoint = st.secrets["AZURE_ENDPOINT"]
+fr_api_key = st.secrets[
     "AZURE_FORM_RECOGNIZER_KEY"
-)
+]
 document_analysis_client = DocumentAnalysisClient(
     endpoint=fr_endpoint, credential=AzureKeyCredential(fr_api_key)
 )
@@ -15,10 +15,10 @@ document_analysis_client = DocumentAnalysisClient(
 # OpenAi Keys
 
 api_type = "azure"
-openai_endpoint = st.secrets("AZURE_OPENAI_ENDPOINT")
+openai_endpoint = st.secrets["AZURE_OPENAI_ENDPOINT"]
 openai_api_version = "2024-08-01-preview"
-openai_api_key = st.secrets("AZURE_OPENAI_KEY")
-deployment_name = st.secrets("AZURE_OPENAI_DEPLOYMENT_NAME")
+openai_api_key = st.secrets["AZURE_OPENAI_KEY"]
+deployment_name = st.secrets["AZURE_OPENAI_DEPLOYMENT_NAME"]
 
 llm = AzureOpenAI(
     model="gpt-4o-mini",
