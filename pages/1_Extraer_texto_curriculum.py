@@ -1,11 +1,7 @@
 import streamlit as st
-import os
-from dotenv import load_dotenv
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 from langchain_openai import AzureOpenAI
-
-load_dotenv()
 
 # Form Recognizer Keys
 fr_endpoint = st.secrets("AZURE_ENDPOINT")
