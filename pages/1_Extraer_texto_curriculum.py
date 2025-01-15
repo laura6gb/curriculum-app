@@ -1,57 +1,84 @@
 import streamlit as st
-import cohere
-import PyPDF2
+import os
+from dotenv import load_dotenv
+from azure.ai.formrecognizer import DocumentAnalysisClient
+from azure.core.credentials import AzureKeyCredential
+from langchain_openai import AzureOpenAI
+
+load_dotenv()
+
+# Form Recognizer Keys
+fr_endpoint = os.getenv("AZURE_ENDPOINT")  # pylint: disable=undefined-variable
+fr_api_key = os.getenv(
+    "AZURE_FORM_RECOGNIZER_KEY"
+)  # pylint: disable=undefined-variable
+document_analysis_client = DocumentAnalysisClient(
+    endpoint=fr_endpoint, credential=AzureKeyCredential(fr_api_key)
+)
+
+# OpenAi Keys
+
+api_type = "azure"
+openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+openai_api_version = "2024-08-01-preview"
+openai_api_key = os.getenv("AZURE_OPENAI_KEY")
+deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+
+llm = AzureOpenAI(
+    model="gpt-4o-mini",
+    temperature=0,
+    api_key=openai_api_key,
+    azure_endpoint=openai_endpoint,
+    api_version=openai_api_version,
+)
 
 st.set_page_config(
     page_title="Extraer texto curriculum", layout="wide", page_icon="book"
 )
 
 st.title("Extraer y mejorar texto de Currículum con AI")
-
 st.write(
     "Sube tu curriculum en formato PDF y nos encargaremos de extraer todo el texto del curriculum, si lo deseas podemos mejorarlo con ayuda de Inteligencia Artificial:"
 )
 
 uploaded_file = st.file_uploader("Sube tu archivo PDF", type="pdf")
 
-cohere_api_key=st.secrets["COHERE_API_KEY"]
-co = cohere.Client(cohere_api_key)
-
 # Process file and extract text
 if uploaded_file:
     try:
-        # Read PDF
-        pdf_reader = PyPDF2.PdfReader(uploaded_file)
-        all_text = ""
+        # Binary read and extracting text
+        file_bytes = uploaded_file.read()
+        with st.spinner("Extrayendo texto del documento..."):
+            poller = document_analysis_client.begin_analyze_document(
+                model_id="prebuilt-read", document=file_bytes
+            )
+            result = poller.result()
 
-        # Extract text from all pages
-        for page in pdf_reader.pages:
-            all_text += page.extract_text()
+        all_text = ""
+        for page in result.pages:
+            for line in page.lines:
+                all_text += line.content + "\n"
 
         # Showing text
         if all_text.strip():
             st.subheader("Texto extraído")
-            st.text_area("Texto extraído del documento:", all_text, height=300)
+            st.text_area("Texto extraído del documento:", all_text, height=400)
 
             # Improving text with AI
             if st.button("Mejorar texto con IA"):
                 with st.spinner("Procesando con IA..."):
                     try:
-                        # Call Cohere AI
-                        response = co.chat(
-                            model="command",
-                            message=f"Mejora este texto de curriculum profesionalmente:\n\n{all_text}",
-                            max_tokens=500,
-                            temperature=0.7,
-                        )
-                        improved_text = response.text.strip()
+                        # Call Azure OpenAI
+                        prompt = f"Mejora este texto de curriculum profesionalmente:\n\n{all_text}"
+                        response = llm.invoke(prompt)
+
                         st.success("Texto mejorado con éxito:")
-                        st.text_area("Texto mejorado por IA", improved_text, height=300)
+                        st.text_area("Texto mejorado por IA", response, height=300)
 
                         # Button: downloading text in .txt
                         st.download_button(
                             "Descargar texto mejorado",
-                            improved_text,
+                            response,
                             file_name="texto_mejorado.txt",
                         )
                     except Exception as e:

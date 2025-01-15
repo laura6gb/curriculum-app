@@ -1,8 +1,11 @@
+os
 streamlit
 matplotlib
 numpy
 pandas
 plotly
-cohere
 fpdf
-PyPDF2
+pyPDF2
+azure-ai-formrecognizer
+openai
+langchain-openai

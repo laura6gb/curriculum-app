@@ -5,7 +5,7 @@ import pandas as pd
 # Reading CSV
 @st.cache_data
 def load_data():
-    df = pd.read_csv("pdfs/employment_rate_Colombia.csv")
+    df = pd.read_csv("pdfs\employment_rate_Colombia.csv")
     return df
 
 
