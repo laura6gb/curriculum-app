@@ -8,10 +8,10 @@ from langchain_openai import AzureOpenAI
 load_dotenv()
 
 # Form Recognizer Keys
-fr_endpoint = os.getenv("AZURE_ENDPOINT")  # pylint: disable=undefined-variable
-fr_api_key = os.getenv(
+fr_endpoint = st.secrets("AZURE_ENDPOINT")
+fr_api_key = st.secrets(
     "AZURE_FORM_RECOGNIZER_KEY"
-)  # pylint: disable=undefined-variable
+)
 document_analysis_client = DocumentAnalysisClient(
     endpoint=fr_endpoint, credential=AzureKeyCredential(fr_api_key)
 )
@@ -19,10 +19,10 @@ document_analysis_client = DocumentAnalysisClient(
 # OpenAi Keys
 
 api_type = "azure"
-openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+openai_endpoint = st.secrets("AZURE_OPENAI_ENDPOINT")
 openai_api_version = "2024-08-01-preview"
-openai_api_key = os.getenv("AZURE_OPENAI_KEY")
-deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+openai_api_key = st.secrets("AZURE_OPENAI_KEY")
+deployment_name = st.secrets("AZURE_OPENAI_DEPLOYMENT_NAME")
 
 llm = AzureOpenAI(
     model="gpt-4o-mini",
