@@ -6,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 # Form Recognizer Keys
 fr_endpoint = st.secrets["AZURE_ENDPOINT"]
-fr_api_key = st.secrets[AZURE_FORM_RECOGNIZER_KEY"]
+fr_api_key = st.secrets["AZURE_FORM_RECOGNIZER_KEY"]
 document_analysis_client = DocumentAnalysisClient(
     endpoint=fr_endpoint, credential=AzureKeyCredential(fr_api_key)
 )
