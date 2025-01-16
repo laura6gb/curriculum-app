@@ -27,6 +27,7 @@ llm = AzureChatOpenAI(
 
 
 def PDF_text_extract(file_bytes):
+    # Takes PDF and extracts text with Form Recognizer
     try:
         poller = document_analysis_client.begin_analyze_document(
             model_id="prebuilt-read", document=file_bytes
@@ -56,9 +57,9 @@ def formatter_AI(all_text):
                 ),
             ]
         )
-        # Configura el input
+        # Configure input
         input_data = {"text": all_text}
-        # Combina el prompt con el LLM y ejecuta
+        # Combines prompt and LLM for executing
         runnable = prompt | llm
         response = runnable.invoke(input_data)
         formatted_text = (
@@ -70,6 +71,7 @@ def formatter_AI(all_text):
 
 
 def improverAI_cv(all_text):
+    # Improves CV text wit OpenAI
     try:
         prompt = ChatPromptTemplate.from_messages(
             [
@@ -83,9 +85,9 @@ def improverAI_cv(all_text):
                 ),
             ]
         )
-        # Configura el input
+        # Configure input
         input_data = {"cv": all_text}
-        # Combina el prompt con el LLM y ejecuta
+        # Combines prompt and LLM for executing
         runnable = prompt | llm
         response = runnable.invoke(input_data)
         improved_text = (
@@ -96,6 +98,7 @@ def improverAI_cv(all_text):
         raise ValueError(f"Error al procesar el texto con IA: {e}")
 
 
+# Streamlit
 st.set_page_config(
     page_title="Extraer texto curriculum", layout="wide", page_icon="book"
 )
@@ -110,7 +113,7 @@ uploaded_file = st.file_uploader("Sube tu archivo PDF", type="pdf")
 # Process file and extract text
 if uploaded_file:
     try:
-        # Leer archivo y extraer texto con Form Recognizer
+        # Reading PDF
         file_bytes = uploaded_file.read()
         with st.spinner("Extrayendo texto del documento..."):
             extracted_text = formatter_AI(PDF_text_extract(file_bytes))
@@ -118,12 +121,11 @@ if uploaded_file:
             st.subheader("Texto extraído")
             st.text_area("Texto extraído del documento:", extracted_text, height=300)
 
-            # Mejorar texto con IA
             if st.button("Mejorar texto con IA"):
                 with st.spinner("Procesando con IA..."):
                     try:
                         improved_text = improverAI_cv(extracted_text)
-                        # Extraer texto de la respuesta
+
                         st.success("Texto mejorado con éxito:")
                         st.subheader("Texto mejorado con OpenAI:")
                         st.markdown(improved_text)
