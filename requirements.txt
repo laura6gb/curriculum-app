@@ -6,7 +6,6 @@ plotly
 fpdf
 pyPDF2
 azure-ai-formrecognizer
-azure.core.credentials
 openai
 langchain_openai
 langchain_core.prompts
